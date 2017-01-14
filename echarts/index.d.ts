@@ -3,7 +3,7 @@
 // Definitions by: Xie Jingyang <https://github.com/xieisabug>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 
-declare namespace ECharts {
+declare namespace echarts {
     function init(dom:HTMLDivElement|HTMLCanvasElement, theme?:Object|string, opts?:{
         devicePixelRatio?: number
         renderer?: string
@@ -47,20 +47,14 @@ declare namespace ECharts {
         hideLoading():void
 
         getDataURL(opts:{
-            // 导出的格式，可选 png, jpeg
             type?: string,
-            // 导出的图片分辨率比例，默认为 1。
             pixelRatio?: number,
-            // 导出的图片背景色，默认使用 option 里的 backgroundColor
             backgroundColor?: string
         }):string
 
         getConnectedDataURL(opts:{
-            // 导出的格式，可选 png, jpeg
             type: string,
-            // 导出的图片分辨率比例，默认为 1。
             pixelRatio: number,
-            // 导出的图片背景色，默认使用 option 里的 backgroundColor
             backgroundColor: string
         }):string
 
@@ -129,5 +123,5 @@ declare namespace ECharts {
 }
 
 declare module "echarts" {
-    export = ECharts;
+    export = echarts;
 }
